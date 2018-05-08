@@ -12,8 +12,11 @@ class PagesController extends Controller
     }
 
     public function index(){
-        $title = 'Product Page';
-        return view('index', compact('title'));
+        $data = array(
+            'title' => 'Items',
+            'services' => ['Consoles', 'Games', 'Accessoires', 'Merchandise']
+        ); 
+        return view('pages.index')->with($data);
     }
     
 }
