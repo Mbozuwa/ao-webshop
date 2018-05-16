@@ -15,3 +15,4 @@ Route::get('/', 'PagesController@welcome');
 Route::get('/index', 'PagesController@index'); 
 Route::get('/services', 'PagesController@services'); 
     
+Route::resource('categories', 'CategoriesController');
