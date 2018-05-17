@@ -12,11 +12,8 @@ class PagesController extends Controller
     }
 
     public function index(){
-        $data = array(
-            'title' => 'Items',
-            'services' => ['Consoles', 'Games', 'Accessoires', 'Merchandise']
-        ); 
-        return view('pages.index')->with($data);
+        $title = 'Homepage';
+        return view('pages.index', compact('title'));
     }
     
 }

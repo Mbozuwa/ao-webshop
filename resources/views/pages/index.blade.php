@@ -2,11 +2,12 @@
 
 @section('content')
     <h1 style="padding-top: 50px;">{{$title}}</h1>
-    @if(count($services) > 0)
+    <p> Welkom </p>
+    {{-- @if(count($services) > 0)
         <ul class="list-group">
             @foreach($services as $service)
                 <li class="list-group-item">{{$service}}</li>
             @endforeach
         </ul>
-    @endif
+    @endif --}}
 @endsection
